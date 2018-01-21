@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DVM</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+  <h1>Decentralized Voting Machine</h1>
+  <p> For years, the powerful and the rich have influenced (or) sometimes rigged the election. <br> Using a decentrialzed application instead a generic client-server architecture, our project aims at a genuine choice of leadership.
+  <br> This type of arrangement makes it almost impossible for anyone to tamper or hack. 
+  <br> It is with a great leader that a nation can prosper. <br> (DVM is currently beta-version used as a PoC) <br> <br> <br></p>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Candidate</th>
+          <th>Votes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rahul Gandhi</td>
+          <td id="candidate-1"></td>
+        </tr>
+        <tr>
+          <td>Narendra Modi</td>
+          <td id="candidate-2"></td>
+        </tr>
+        <tr>
+          <td>Nitish Kumar</td>
+          <td id="candidate-3"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+   <center><input type="text" id="candidate" />
+ <a href="#" onclick="voteForCandidate()" class="btn btn-primary">Vote</a> </center>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+</html>
